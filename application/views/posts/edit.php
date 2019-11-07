@@ -11,6 +11,18 @@
         <label for="editor">Body</label>
         <textarea class="form-control" id="editor" name="body" placeholder="Add Body"><?php echo $post['body']; ?></textarea>
     </div>
+    <div class="form-group">
+        <label for="category_id">Category</label>
+        <select class="form-control" name="category_id" id="category_id">
+            <?php foreach($categories as $category) : ?>
+            <option value="<?= $category["id"]; ?>"><?= $category["name"]; ?></option>
+            <?php endforeach; ?>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="postimage">Upload Image</label>
+        <input class="form-control" type="file" name="userimage" id="postimage" size="20">
+    </div>
     <input type="hidden" name="id" value="<?= $post['id']; ?>">
     <button type="submit" class="btn btn-primary">Submit</button>
 <?= form_close(); ?>

@@ -10,7 +10,7 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="#">CI Blog</a>
+                <a class="navbar-brand" href="<?= site_url(); ?>">CI Blog</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
