@@ -4,6 +4,8 @@
         <title>CI Blog</title>
         <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
         <link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>">
+
+        <script src="https://cdn.ckeditor.com/ckeditor5/15.0.0/classic/ckeditor.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -25,8 +27,13 @@
                             <a class="nav-link" href="<?= site_url('posts'); ?>">Blog</a>
                         </li>
                     </ul>
+                    <ul class="navbar-nav navbar-right">
+                        <li class="nav-item">
+                            <a href="<?= site_url('posts/create'); ?>" class="nav-link">Create Post</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
 
-        <div class="container">
+        <div class="container main">
