@@ -1,7 +1,7 @@
         </div>
 
         <script>
-            ClassicEditor.create(document.querySelector('#editor'));
+            CKEDITOR.replace('editor');
         </script>
     </body>
 </html>

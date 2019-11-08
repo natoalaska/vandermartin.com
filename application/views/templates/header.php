@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
         <link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>">
 
-        <script src="https://cdn.ckeditor.com/ckeditor5/15.0.0/classic/ckeditor.js"></script>
+        <script src="http://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -26,10 +26,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="<?= site_url('posts'); ?>">Blog</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= site_url('categories'); ?>">Categories</a>
+                        </li>
                     </ul>
                     <ul class="navbar-nav navbar-right">
                         <li class="nav-item">
                             <a href="<?= site_url('posts/create'); ?>" class="nav-link">Create Post</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= site_url('categories/create'); ?>" class="nav-link">Create Category</a>
                         </li>
                     </ul>
                 </div>

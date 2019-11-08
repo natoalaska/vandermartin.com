@@ -54,6 +54,11 @@ $route['posts/update'] = 'posts/update';
 $route['posts/delete'] = 'posts/delete';
 $route['posts/(:any)'] = 'posts/view/$1';
 $route['posts'] = 'posts/index';
+
+$route['categories/create'] = 'categories/create';
+$route['categories/posts/(:any)'] = 'categories/posts/$1';
+$route['categories'] = 'categories/index';
+
 $route['default_controller'] = 'pages/view';
 $route['(:any)'] = 'pages/view/$1';
 $route['404_override'] = '';

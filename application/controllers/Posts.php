@@ -6,6 +6,7 @@ class Posts extends CI_Controller
     public function __construct() {
         parent::__construct();
         $this->load->model('post_model');
+        $this->load->model('category_model');
     }
 
     public function index()
@@ -38,7 +39,7 @@ class Posts extends CI_Controller
     public function create()
     {
         $data['title'] = 'Create Post';
-        $data['categories'] = $this->post_model->get_categories();
+        $data['categories'] = $this->categories_model->get_categories();
 
         $this->form_validation->set_rules('title', 'Title', 'required');
         $this->form_validation->set_rules('body', 'Body', 'required');
@@ -86,7 +87,7 @@ class Posts extends CI_Controller
     public function edit($slug)
     {
         $data['post'] = $this->post_model->get_posts($slug);
-        $data['categories'] = $this->post_model->get_categories();
+        $data['categories'] = $this->category_model->get_categories();
 
         if (empty($data['post']))
         {

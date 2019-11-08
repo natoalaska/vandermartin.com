@@ -9,7 +9,7 @@
     </div>
     <div class="form-group">
         <label for="editor">Body</label>
-        <textarea class="form-control" id="editor" name="body" placeholder="Add Body"></textarea>
+        <textarea class="form-control" id="editor" name="body" placeholder="Add Body" rows="10"></textarea>
     </div>
     <div class="form-group">
         <label for="category_id">Category</label>
